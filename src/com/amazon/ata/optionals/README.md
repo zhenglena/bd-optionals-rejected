@@ -19,7 +19,7 @@ Optionals instead, the activity should become easier to understand and its code 
 maintainable.
 
 `GetPublisherOfBestRatedPaperbackForAuthorActivity` is a niche activity that retrieves one very specific piece of
-information. There is currently an implementation in package `optionals.classroom.nullchecks` that has to handle
+information. There is currently an implementation in package `optionals.nullchecks` that has to handle
 a series of nested calls to get member variables that may not exist. In particular, it:
 1. Gets an `Author` based on the provided `authorName` (which may not find an `Author` in our datastore)
 1. Gets that `Author`'s best-rated `Book` (which may not exist, as an `Author` is not required to have published 
@@ -45,12 +45,12 @@ to see more detail!
 ## Phase 0: Preliminaries
 
 Run the `optionals-classroom-phase0` RDE workflow to verify your workspace and the original implementation in
-`optionals.classroom.nullchecks` are set up correctly.
+`optionals.nullchecks` are set up correctly.
 
 Phase 0 is complete when:
 - `optionals-classroom-phase0` RDE workflow passes
 
-## Phase 1: Implement `Optional<T>` methods in `optionals.classroom.optionals.models` classes
+## Phase 1: Implement `Optional<T>` methods in `optionals.optionals.models` classes
 
 In the first phase you will rewrite various methods in the `Author` and `Book` classes
 to return an empty `Optional` where the original implementation returned `null`.
@@ -90,7 +90,7 @@ Phase 1 is complete when:
 
 Now that `Optional` versions of each of the methods used by the original
 `GetPublisherOfBestRatedPaperbackForAuthorActivity` implementation exist, you have all the pieces you need to
-implement the new `Optional` version in `optionals.classroom.optionals`.
+implement the new `Optional` version in `optionals.optionals`.
 
 Implement `handleRequest` in `GetPublisherOfBestRatedPaperbackForAuthorActivity` using `Optional`s. Your implementation
 should return an empty `Optional` where the original implementation would have returned null.

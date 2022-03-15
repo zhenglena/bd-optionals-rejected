@@ -1,4 +1,4 @@
-package com.amazon.ata.optionals.classroom.optionals.models;
+package com.amazon.ata.optionals.optionals.models;
 
 public class Publisher {
     private final String id;

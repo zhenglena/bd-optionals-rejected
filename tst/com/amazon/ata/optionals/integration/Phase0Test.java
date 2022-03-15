@@ -1,12 +1,12 @@
-package com.amazon.ata.optionals.classroom.integration;
+package com.amazon.ata.optionals.integration;
 
-import com.amazon.ata.optionals.classroom.nullchecks.GetPublisherOfBestRatedPaperbackForAuthorActivity;
-import com.amazon.ata.optionals.classroom.nullchecks.dao.AuthorDao;
-import com.amazon.ata.optionals.classroom.nullchecks.models.Author;
-import com.amazon.ata.optionals.classroom.nullchecks.models.Book;
-import com.amazon.ata.optionals.classroom.nullchecks.models.Printing;
-import com.amazon.ata.optionals.classroom.nullchecks.models.PrintingType;
-import com.amazon.ata.optionals.classroom.nullchecks.models.Publisher;
+import com.amazon.ata.optionals.nullchecks.GetPublisherOfBestRatedPaperbackForAuthorActivity;
+import com.amazon.ata.optionals.nullchecks.dao.AuthorDao;
+import com.amazon.ata.optionals.nullchecks.models.Author;
+import com.amazon.ata.optionals.nullchecks.models.Book;
+import com.amazon.ata.optionals.nullchecks.models.Printing;
+import com.amazon.ata.optionals.nullchecks.models.PrintingType;
+import com.amazon.ata.optionals.nullchecks.models.Publisher;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;

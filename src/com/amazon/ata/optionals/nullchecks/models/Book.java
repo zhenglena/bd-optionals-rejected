@@ -1,4 +1,4 @@
-package com.amazon.ata.optionals.classroom.nullchecks.models;
+package com.amazon.ata.optionals.nullchecks.models;
 
 import java.util.ArrayList;
 import java.util.IntSummaryStatistics;

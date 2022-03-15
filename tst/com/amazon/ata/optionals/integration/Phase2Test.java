@@ -1,12 +1,12 @@
-package com.amazon.ata.optionals.classroom.integration;
+package com.amazon.ata.optionals.integration;
 
-import com.amazon.ata.optionals.classroom.optionals.GetPublisherOfBestRatedPaperbackForAuthorActivity;
-import com.amazon.ata.optionals.classroom.optionals.dao.AuthorDao;
-import com.amazon.ata.optionals.classroom.optionals.models.Author;
-import com.amazon.ata.optionals.classroom.optionals.models.Book;
-import com.amazon.ata.optionals.classroom.optionals.models.Printing;
-import com.amazon.ata.optionals.classroom.optionals.models.PrintingType;
-import com.amazon.ata.optionals.classroom.optionals.models.Publisher;
+import com.amazon.ata.optionals.optionals.GetPublisherOfBestRatedPaperbackForAuthorActivity;
+import com.amazon.ata.optionals.optionals.dao.AuthorDao;
+import com.amazon.ata.optionals.optionals.models.Author;
+import com.amazon.ata.optionals.optionals.models.Book;
+import com.amazon.ata.optionals.optionals.models.Printing;
+import com.amazon.ata.optionals.optionals.models.PrintingType;
+import com.amazon.ata.optionals.optionals.models.Publisher;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;

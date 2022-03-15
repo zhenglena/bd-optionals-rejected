@@ -1,4 +1,4 @@
-package com.amazon.ata.optionals.classroom.nullchecks.models;
+package com.amazon.ata.optionals.nullchecks.models;
 
 public class Publisher {
     private final String id;

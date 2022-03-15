@@ -1,16 +1,4 @@
 # What do you mean, it's rejected?!
-      
-**branch name:** optionals-classroom
-
-**AWS account:** (account number for AWS account that ATA gave you --
-[find on Conduit](https://access.amazon.com/aws/accounts) )
-
-**role:** IibsAdminAccess-DO-NOT-DELETE
-
-**RDE workflows:**
-- `optionals-classroom-phase0`
-- `optionals-classroom-phase1`
-- `optionals-classroom-phase2`
 
 ## Introduction
 
@@ -34,21 +22,17 @@ those cases. To alleviate some of this, we will reimplement `GetPublisherOfBestR
 Disclaimer: One difference that you'll notice here is that our Activity
 classes don't yet accept/return Response/Result objects. They're
 accepting/returning individual values. We'll do this until it's time to
-create our service infrastructure and create the necessary Coral models.
+create our service infrastructure and create the necessary models.
 That retrofit is beyond the scope of this activity, but will be fairly
 easily accomplished in the Activity classes themselves when the time comes.
 
-Helpful hint: If an RDE workflow is failing for one of the phases, and you want to
-see more about the test failure, use the file URL that is printed out on the commandline
-to see more detail!
-
 ## Phase 0: Preliminaries
 
-Run the `optionals-classroom-phase0` RDE workflow to verify your workspace and the original implementation in
+Run the `Phase0Test` to verify your workspace and the original implementation in
 `optionals.nullchecks` are set up correctly.
 
 Phase 0 is complete when:
-- `optionals-classroom-phase0` RDE workflow passes
+- `Phase0Test` passes
 
 ## Phase 1: Implement `Optional<T>` methods in `optionals.optionals.models` classes
 
@@ -84,7 +68,7 @@ Phase 1 is complete when:
   and `Book::getPaperback`
 * You have implemented the `Optional` versions of `Author::getBestRatedBook`, `Book::getWeightedRating`,
   and `Book::getPaperback`
-* `optionals-classroom-phase1` RDE workflow passes
+* `Phase1Test` passes
 
 ## Phase 2: Implement `Optional` version of `GetPublisherOfBestRatedPaperbackForAuthorActivity::handleRequest`
 
@@ -106,4 +90,4 @@ conversions that already result in an `Optional`. `flatMap` doesn't *wrap* the r
 
 Phase 2 is complete when:
 * You have implemented the `Optional` version of `GetPublisherOfBestRatedPaperbackForAuthorActivity::handleRequest`
-* `optionals-classroom-phase2` RDE workflow passes
+* `Phase2Test` passes

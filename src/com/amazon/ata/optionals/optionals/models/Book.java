@@ -1,4 +1,4 @@
-package com.amazon.ata.optionals.classroom.optionals.models;
+package com.amazon.ata.optionals.optionals.models;
 
 import java.util.ArrayList;
 import java.util.IntSummaryStatistics;

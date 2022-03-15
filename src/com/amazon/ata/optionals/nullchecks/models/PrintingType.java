@@ -1,4 +1,4 @@
-package com.amazon.ata.optionals.classroom.nullchecks.models;
+package com.amazon.ata.optionals.nullchecks.models;
 
 public enum PrintingType {
     PAPERBACK,

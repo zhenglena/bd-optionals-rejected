@@ -1,7 +1,7 @@
-package com.amazon.ata.optionals.classroom.optionals;
+package com.amazon.ata.optionals.optionals;
 
-import com.amazon.ata.optionals.classroom.optionals.dao.AuthorDao;
-import com.amazon.ata.optionals.classroom.optionals.models.Publisher;
+import com.amazon.ata.optionals.optionals.dao.AuthorDao;
+import com.amazon.ata.optionals.optionals.models.Publisher;
 
 import java.util.Optional;
 
@@ -28,7 +28,7 @@ public class GetPublisherOfBestRatedPaperbackForAuthorActivity {
         }
 
         // PARTICIPANTS: Reimplement this method from
-        // `optionals.classroom.nullchecks.GetPublisherOfBestRatedPaperbackForAuthorActivity`
+        // `optionals.nullchecks.GetPublisherOfBestRatedPaperbackForAuthorActivity`
         // using Optionals.
         /* Here's the original implementation:
         Author author = authorDao.findAuthorByName(authorName);

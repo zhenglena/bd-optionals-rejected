@@ -1,6 +1,6 @@
-package com.amazon.ata.optionals.classroom.optionals.dao;
+package com.amazon.ata.optionals.optionals.dao;
 
-import com.amazon.ata.optionals.classroom.optionals.models.Author;
+import com.amazon.ata.optionals.optionals.models.Author;
 
 import java.util.Map;
 import java.util.Optional;

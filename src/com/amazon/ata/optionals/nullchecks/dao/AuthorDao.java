@@ -1,6 +1,6 @@
-package com.amazon.ata.optionals.classroom.nullchecks.dao;
+package com.amazon.ata.optionals.nullchecks.dao;
 
-import com.amazon.ata.optionals.classroom.nullchecks.models.Author;
+import com.amazon.ata.optionals.nullchecks.models.Author;
 
 import java.util.Map;
 

@@ -38,20 +38,15 @@ public class Author {
      * @return An Optional containing the author's highest rated book, if any.
      */
     public Optional<Book> getBestRatedBook() {
-        /* Here's the original, null-ridden implementation:
         Book highestRatedBook = null;
         Double highestRating = -1.0;
         for (Book book : books) {
-            Double rating = book.getWeightedRating();
-            if (rating != null && rating > highestRating) {
-                highestRating = rating;
+            Optional<Double> rating = book.getWeightedRating();
+            if (rating.isPresent() && rating.get() > highestRating) {
+                highestRating = rating.get();
                 highestRatedBook = book;
             }
         }
-        return highestRatedBook;
-        */
-
-        // PARTICIPANTS: Write a safer, more readable implementation using Optional.
-        return Optional.empty();
+        return Optional.ofNullable(highestRatedBook);
     }
 }

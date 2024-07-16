@@ -1,6 +1,9 @@
 package com.amazon.ata.optionals.optionals;
 
 import com.amazon.ata.optionals.optionals.dao.AuthorDao;
+import com.amazon.ata.optionals.optionals.models.Author;
+import com.amazon.ata.optionals.optionals.models.Book;
+import com.amazon.ata.optionals.optionals.models.Printing;
 import com.amazon.ata.optionals.optionals.models.Publisher;
 
 import java.util.Optional;
@@ -27,24 +30,10 @@ public class GetPublisherOfBestRatedPaperbackForAuthorActivity {
             throw new IllegalArgumentException("Author must not be null!");
         }
 
-        // PARTICIPANTS: Reimplement this method from
-        // `optionals.nullchecks.GetPublisherOfBestRatedPaperbackForAuthorActivity`
-        // using Optionals.
-        /* Here's the original implementation:
-        Author author = authorDao.findAuthorByName(authorName);
-
-        if (author != null) {
-            Book bestRatedBook = author.getBestRatedBook();
-            if (bestRatedBook != null) {
-                Printing paperback = bestRatedBook.getPaperback();
-                if (paperback != null) {
-                    return paperback.getPublisher();
-                }
-            }
-        }
-        */
-
-        return Optional.empty();
+        return authorDao.findAuthorByName(authorName)
+                .flatMap(Author::getBestRatedBook)
+                .flatMap(Book::getPaperback)
+                .flatMap(Printing::getPublisher);
     }
 
 }

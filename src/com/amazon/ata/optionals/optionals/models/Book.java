@@ -68,16 +68,11 @@ public class Book {
             .mapToInt(Integer::intValue)
             .summaryStatistics();
 
-        /* Here's the original implementation:
         if (statistics.getCount() == 0) {
-            return null;
+            return Optional.empty();
         } else {
-            return statistics.getAverage();
+            return Optional.of(statistics.getAverage());
         }
-        */
-
-        // PARTICIPANTS: Make this safer with Optional.
-        return Optional.empty();
     }
 
     /**
@@ -86,20 +81,15 @@ public class Book {
      *     if any.
      */
     public Optional<Printing> getPaperback() {
-        /* Here's the original implementation:
         Printing latestPaperback = null;
         for (Printing printing : printings) {
             if (printing.getPrintingType() == PrintingType.PAPERBACK) {
                 if (latestPaperback == null
-                    || latestPaperback.getPrintDate().before(printing.getPrintDate())) {
+                        || latestPaperback.getPrintDate().before(printing.getPrintDate())) {
                     latestPaperback = printing;
                 }
             }
         }
-        return latestPaperback;
-        */
-
-        // PARTICIPANTS: Make this safer with Optional.
-        return Optional.empty();
+        return Optional.ofNullable(latestPaperback);
     }
 }
